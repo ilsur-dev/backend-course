@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Сокращатель ссылок</title>
+        <style>
+            table, th, tr, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            td {
+                padding: 5px 14px;
+                font-size: 16px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Сокращатель ссылок</h1>
+        <table>
+            <% for (key in links) { %>
+                <tr>
+                    <td><%= key %></td>
+                    <td><%= links[key].link %></td>
+                    <td><%= links[key].count %></td>
+                </tr>
+            <% } %>
+        </table>
+    </body>
+</html>
